@@ -1,8 +1,9 @@
-package kz.iitu.springlab01.notify;
+package kz.iitu.springlab.notify;
 
 public interface Notifier {
 
     String send(String message);
 
     String channel();
+
 }

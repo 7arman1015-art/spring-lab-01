@@ -1,4 +1,4 @@
-package kz.iitu.springlab01.notify;
+package kz.iitu.springlab.notify;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

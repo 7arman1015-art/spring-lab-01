@@ -1,4 +1,4 @@
-package kz.iitu.springlab01.lifecycle;
+package kz.iitu.springlab.lifecycle;
 
 import jakarta.annotation.PostConstruct;
 import jakarta.annotation.PreDestroy;
@@ -18,30 +18,41 @@ public class LifecycleDemo {
             LoggerFactory.getLogger(LifecycleDemo.class);
 
     private final DateTimeFormatter formatter;
+
     private final List<String> events = new ArrayList<>();
+
 
     public LifecycleDemo(DateTimeFormatter formatter) {
         this.formatter = formatter;
         record("1. Constructor called");
     }
 
+
     @PostConstruct
     void init() {
         record("2. @PostConstruct executed");
     }
+
 
     @PreDestroy
     void shutdown() {
         record("3. @PreDestroy executed");
     }
 
+
     public List<String> events() {
         return List.copyOf(events);
     }
 
+
     private void record(String stage) {
-        String line = LocalDateTime.now().format(formatter) + " " + stage;
+        String line = LocalDateTime.now()
+                .format(formatter)
+                + " - "
+                + stage;
+
         events.add(line);
+
         log.info("LIFECYCLE >> {}", line);
     }
 }
