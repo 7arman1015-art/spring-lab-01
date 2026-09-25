@@ -55,6 +55,12 @@
 			<artifactId>spring-boot-starter-actuator</artifactId>
 		</dependency>
 
+		<!-- Spring Boot 4 uses this starter for Spring AOP and AspectJ. -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-aspectj</artifactId>
+		</dependency>
+
 
 		<!-- DevTools -->
 		<dependency>
