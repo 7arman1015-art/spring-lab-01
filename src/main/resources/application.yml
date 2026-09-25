@@ -1,0 +1,28 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: spring-lab-01
+
+app:
+  owner: Aruzhan Zhaksybekova
+  group: IT1-2404IS
+  mail:
+    from: no-reply@iitu.kz
+    retry-count: 3
+    timeout: PT5S
+    enabled: true
+  security:
+    token-ttl: 30m
+    min-password-length: 12
+
+logging:
+  level:
+    kz.iitu: INFO
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,env,configprops,conditions

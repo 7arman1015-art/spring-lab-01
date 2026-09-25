@@ -1,4 +1,4 @@
-package kz.iitu.springlab01.config;
+package kz.iitu.springlab.config;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
@@ -12,8 +12,8 @@ public class FormatConfig {
 
     @Bean
     public DateTimeFormatter reportDateFormatter(
-            @Value("${app.date-pattern:dd.MM.yyyy HH:mm:ss}") String pattern
-    ) {
+            @Value("${app.date-pattern:yyyy-MM-dd HH:mm:ss}") String pattern) {
+
         return DateTimeFormatter.ofPattern(pattern, Locale.ENGLISH);
     }
 }
