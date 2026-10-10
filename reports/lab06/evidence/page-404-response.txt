@@ -1,0 +1,37 @@
+GET /books/999?lang=ru
+HTTP 404
+Content-Type: text/html;charset=UTF-8
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Книга не найдена</title>
+    <link rel="stylesheet" href="/css/app.css">
+</head>
+<body>
+<header class="site-header">
+    <div class="header-inner">
+        <a class="brand" href="/books">Университетская библиотека</a>
+        <nav aria-label="Основная навигация">
+            <a href="/books">Каталог книг</a>
+            <a href="/books/new">Новая книга</a>
+            <span class="languages">
+                <a href="?lang=en" lang="en">EN</a>
+                <a href="?lang=ru" lang="ru" class="active">RU</a>
+            </span>
+        </nav>
+    </div>
+</header>
+<main class="container narrow">
+    <p class="eyebrow">404</p>
+    <h1>Книга не найдена</h1>
+    <div class="card">
+        <p>Книга с идентификатором 999 не найдена.</p>
+        <p class="muted">/books/999</p>
+        <a class="button" href="/books">Вернуться в каталог</a>
+    </div>
+</main>
+</body>
+</html>

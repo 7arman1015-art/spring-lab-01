@@ -1,0 +1,106 @@
+{
+  "captured_at": "2026-10-10T10:12:07.192Z",
+  "base_url": "http://localhost:8080",
+  "screenshots": [
+    {
+      "path": "01-empty-title-en.png",
+      "caption": "Пустое название и сообщение на английском языке",
+      "details": "POST /books вернул HTTP 200 с той же формой. Ошибка показана у названия и в сводке; автор, год, жанр и флаг доступности сохранены. Адрес: http://localhost:8080/books"
+    },
+    {
+      "path": "02-year-out-of-range-en.png",
+      "caption": "Год 1200 отклонён",
+      "details": "Ограничение @Min отклоняет значение 1200. Введённые значения остаются в форме; год выделен красной рамкой. Адрес: http://localhost:8080/books"
+    },
+    {
+      "path": "03-no-genre-en.png",
+      "caption": "Не выбран жанр",
+      "details": "@NotNull требует выбрать жанр. Название, автор, год и флажок доступности сохранены; список жанров повторно добавлен в модель. Адрес: http://localhost:8080/books"
+    },
+    {
+      "path": "04-empty-title-ru.png",
+      "caption": "Та же форма и ошибка на русском языке",
+      "details": "После ?lang=ru подписи, жанры, кнопки, общий заголовок и сообщение валидации отображаются по-русски. Локаль сохраняется в HTTP-сессии для POST. Адрес: http://localhost:8080/books"
+    },
+    {
+      "path": "05-custom-constraint-ru.png",
+      "caption": "Собственное ограничение NoDigits",
+      "details": "Имя автора Bloch 2018 отклонено валидатором NoDigitsValidator. Текст ошибки получен по ключу book.author.nodigits из русского bundle. Адрес: http://localhost:8080/books"
+    },
+    {
+      "path": "06-two-errors-ru.png",
+      "caption": "Сводка двух ошибок",
+      "details": "Год 1200 и отсутствие жанра проверяются одновременно. #fields.allErrors() показывает обе ошибки; каждая также расположена рядом с полем. Адрес: http://localhost:8080/books"
+    },
+    {
+      "path": "07-success-ru.png",
+      "caption": "Успешное добавление книги",
+      "details": "Корректный POST вернул HTTP 302 с переходом на /books. После редиректа видны разовое flash-сообщение и новая книга Effective Java с сохранёнными жанром и доступностью. Адрес: http://localhost:8080/books"
+    },
+    {
+      "path": "08-refresh-no-duplicate.png",
+      "caption": "Обновление страницы после добавления",
+      "details": "После обновления GET /books flash-сообщение исчезло. Количество записей не изменилось; Effective Java присутствует ровно один раз. Адрес: http://localhost:8080/books"
+    },
+    {
+      "path": "09-page-not-found.png",
+      "caption": "HTML-страница для отсутствующей книги",
+      "details": "GET /books/999 возвращает HTTP 404 и HTML-страницу error/not-found. PageExceptionHandler также добавляет общий libraryName. Адрес: http://localhost:8080/books/999?lang=ru"
+    },
+    {
+      "path": "10-api-problem-detail.png",
+      "caption": "ProblemDetail для API",
+      "details": "GET /api/books/999 возвращает HTTP 404, Content-Type application/problem+json и поля type, title, status, detail, instance. Запрос обработан ApiExceptionHandler. Адрес: http://localhost:8080/api/books/999"
+    },
+    {
+      "path": "11-variant11-common-model.png",
+      "caption": "Вариант 11 и сохранённая книга",
+      "details": "На странице деталей отображается libraryName из @ModelAttribute в PageExceptionHandler. Тот же общий атрибут используется формой, каталогом и HTML-страницей ошибки. Адрес: http://localhost:8080/books/4?lang=ru"
+    }
+  ],
+  "responses": [
+    {
+      "request": "GET /books/999",
+      "status": 404,
+      "content_type": "text/html;charset=UTF-8",
+      "handler": "PageExceptionHandler.bookNotFound",
+      "result": "HTML error/not-found; «Книга не найдена», идентификатор 999."
+    },
+    {
+      "request": "GET /api/books/999",
+      "status": 404,
+      "content_type": "application/problem+json",
+      "handler": "ApiExceptionHandler.bookNotFound",
+      "result": "JSON ProblemDetail с status=404 и instance=/api/books/999."
+    }
+  ],
+  "checks": [
+    {
+      "name": "Отклонённые формы",
+      "result": "Шесть некорректных отправок не добавили ни одной книги."
+    },
+    {
+      "name": "Вариант 11",
+      "result": "libraryName отображается в общей шапке формы, каталога, деталей и страницы ошибки."
+    },
+    {
+      "name": "Ответы 404",
+      "result": "HTML: 404 text/html; API: 404 application/problem+json. Содержимое и заголовки сохранены отдельно."
+    },
+    {
+      "name": "Браузер",
+      "result": "Реальные формы отправлены через headless Google Chrome. Ошибок pageerror не обнаружено."
+    }
+  ],
+  "build": {
+    "command": "Maven 3.9.16: mvn -B package (прямой запуск Maven из кэша Wrapper)",
+    "passed": true,
+    "tests": 18,
+    "summary": "BUILD SUCCESS. Tests run: 18, Failures: 0, Errors: 0, Skipped: 0."
+  },
+  "publication": {
+    "state": "Ветка lab06 опубликована в GitHub. Код, доказательства и отчёт сохранены в репозитории.",
+    "commit": "d8df0f1e15fe8949c859466a6c472ac3d4fd5d67"
+  },
+  "prg": "Проверено в реальном Chrome: POST /books → HTTP 302 (Location: http://localhost:8080/books) → GET /books. Создана одна книга; после reload flash-сообщение отсутствует и число книг остаётся 4."
+}

@@ -1,0 +1,11 @@
+GET /api/books/999
+HTTP 404
+Content-Type: application/problem+json
+
+{
+  "detail": "Книга с идентификатором 999 не найдена.",
+  "instance": "/api/books/999",
+  "status": 404,
+  "title": "Книга не найдена",
+  "type": "urn:problem:book-not-found"
+}

@@ -1,0 +1,153 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] -----------------------< kz.iitu:spring-lab-01 >------------------------
+[INFO] Building spring-lab-01 0.0.1-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter-thymeleaf/4.1.1/spring-boot-starter-thymeleaf-4.1.1.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter-thymeleaf/4.1.1/spring-boot-starter-thymeleaf-4.1.1.pom (2.3 kB at 2.2 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-thymeleaf/4.1.1/spring-boot-thymeleaf-4.1.1.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-thymeleaf/4.1.1/spring-boot-thymeleaf-4.1.1.pom (2.4 kB at 22 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/thymeleaf/thymeleaf-spring6/3.1.5.RELEASE/thymeleaf-spring6-3.1.5.RELEASE.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/thymeleaf/thymeleaf-spring6/3.1.5.RELEASE/thymeleaf-spring6-3.1.5.RELEASE.pom (4.6 kB at 41 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/thymeleaf/thymeleaf-lib/3.1.5.RELEASE/thymeleaf-lib-3.1.5.RELEASE.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/thymeleaf/thymeleaf-lib/3.1.5.RELEASE/thymeleaf-lib-3.1.5.RELEASE.pom (6.5 kB at 54 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/thymeleaf/thymeleaf-parent/3.1.5.RELEASE/thymeleaf-parent-3.1.5.RELEASE.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/thymeleaf/thymeleaf-parent/3.1.5.RELEASE/thymeleaf-parent-3.1.5.RELEASE.pom (23 kB at 204 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/springframework/spring-framework-bom/6.2.17/spring-framework-bom-6.2.17.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/springframework/spring-framework-bom/6.2.17/spring-framework-bom-6.2.17.pom (5.8 kB at 50 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/fasterxml/jackson/jackson-bom/2.18.2/jackson-bom-2.18.2.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/fasterxml/jackson/jackson-bom/2.18.2/jackson-bom-2.18.2.pom (19 kB at 163 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/fasterxml/jackson/jackson-parent/2.18.1/jackson-parent-2.18.1.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/fasterxml/jackson/jackson-parent/2.18.1/jackson-parent-2.18.1.pom (6.7 kB at 60 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/fasterxml/oss-parent/61/oss-parent-61.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/fasterxml/oss-parent/61/oss-parent-61.pom (23 kB at 188 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/io/projectreactor/reactor-bom/2024.0.0/reactor-bom-2024.0.0.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/io/projectreactor/reactor-bom/2024.0.0/reactor-bom-2024.0.0.pom (4.8 kB at 43 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/logging/log4j/log4j-bom/2.25.3/log4j-bom-2.25.3.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/logging/log4j/log4j-bom/2.25.3/log4j-bom-2.25.3.pom (12 kB at 108 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/junit/junit-bom/5.14.3/junit-bom-5.14.3.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/junit/junit-bom/5.14.3/junit-bom-5.14.3.pom (5.7 kB at 48 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/thymeleaf/thymeleaf/3.1.5.RELEASE/thymeleaf-3.1.5.RELEASE.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/thymeleaf/thymeleaf/3.1.5.RELEASE/thymeleaf-3.1.5.RELEASE.pom (4.0 kB at 37 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/attoparser/attoparser/2.0.7.RELEASE/attoparser-2.0.7.RELEASE.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/attoparser/attoparser/2.0.7.RELEASE/attoparser-2.0.7.RELEASE.pom (11 kB at 105 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/unbescape/unbescape/1.1.6.RELEASE/unbescape-1.1.6.RELEASE.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/unbescape/unbescape/1.1.6.RELEASE/unbescape-1.1.6.RELEASE.pom (10.0 kB at 92 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter-thymeleaf/4.1.1/spring-boot-starter-thymeleaf-4.1.1.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter-thymeleaf/4.1.1/spring-boot-starter-thymeleaf-4.1.1.jar (4.7 kB at 46 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-thymeleaf/4.1.1/spring-boot-thymeleaf-4.1.1.jar
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/thymeleaf/thymeleaf-spring6/3.1.5.RELEASE/thymeleaf-spring6-3.1.5.RELEASE.jar
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/thymeleaf/thymeleaf/3.1.5.RELEASE/thymeleaf-3.1.5.RELEASE.jar
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/attoparser/attoparser/2.0.7.RELEASE/attoparser-2.0.7.RELEASE.jar
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/unbescape/unbescape/1.1.6.RELEASE/unbescape-1.1.6.RELEASE.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-thymeleaf/4.1.1/spring-boot-thymeleaf-4.1.1.jar (31 kB at 101 kB/s)
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/thymeleaf/thymeleaf/3.1.5.RELEASE/thymeleaf-3.1.5.RELEASE.jar (945 kB at 2.1 MB/s)
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/unbescape/unbescape/1.1.6.RELEASE/unbescape-1.1.6.RELEASE.jar (174 kB at 371 kB/s)
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/thymeleaf/thymeleaf-spring6/3.1.5.RELEASE/thymeleaf-spring6-3.1.5.RELEASE.jar (195 kB at 415 kB/s)
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/attoparser/attoparser/2.0.7.RELEASE/attoparser-2.0.7.RELEASE.jar (246 kB at 480 kB/s)
+[INFO] 
+[INFO] --- resources:3.5.0:resources (default-resources) @ spring-lab-01 ---
+[INFO] Copying 3 resources from src\main\resources to target\classes
+[INFO] Copying 8 resources from src\main\resources to target\classes
+[INFO] 
+[INFO] --- compiler:3.15.0:compile (default-compile) @ spring-lab-01 ---
+[INFO] Recompiling the module because of changed dependency.
+[INFO] Compiling 41 source files with javac [debug parameters release 25] to target\classes
+[INFO] 
+[INFO] --- resources:3.5.0:testResources (default-testResources) @ spring-lab-01 ---
+[INFO] skip non existing resourceDirectory C:\Users\Arman\OneDrive\������� ����\spring-lab-git\src\test\resources
+[INFO] 
+[INFO] --- compiler:3.15.0:testCompile (default-testCompile) @ spring-lab-01 ---
+[INFO] Recompiling the module because of changed dependency.
+[INFO] Compiling 3 source files with javac [debug parameters release 25] to target\test-classes
+[INFO] 
+[INFO] --- surefire:3.5.6:test (default-test) @ spring-lab-01 ---
+[INFO] Using auto detected provider org.apache.maven.surefire.junitplatform.JUnitPlatformProvider
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running kz.iitu.springlab.lab6.BookWebIntegrationTests
+15:57:58.056 [main] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [kz.iitu.springlab.lab6.BookWebIntegrationTests]: BookWebIntegrationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+15:57:58.444 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration kz.iitu.springlab.SpringLab01Application for test class kz.iitu.springlab.lab6.BookWebIntegrationTests
+15:57:58.701 [main] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [kz.iitu.springlab.lab6.BookWebIntegrationTests]: BookWebIntegrationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+15:57:58.710 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration kz.iitu.springlab.SpringLab01Application for test class kz.iitu.springlab.lab6.BookWebIntegrationTests
+15:57:58.919 [main] INFO org.springframework.boot.devtools.restart.RestartApplicationListener -- Restart disabled due to context in which it is running
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v4.1.1)
+
+2026-10-10T15:57:59.782+06:00  INFO 14572 --- [spring-lab-01] [           main] k.i.s.lab6.BookWebIntegrationTests       : Starting BookWebIntegrationTests using Java 25.0.1 with PID 14572 (started by Arman in C:\Users\Arman\OneDrive\������� ����\spring-lab-git)
+2026-10-10T15:57:59.786+06:00  INFO 14572 --- [spring-lab-01] [           main] k.i.s.lab6.BookWebIntegrationTests       : No active profile set, falling back to 1 default profile: "default"
+2026-10-10T15:58:03.811+06:00  INFO 14572 --- [spring-lab-01] [           main] k.i.springlab.lifecycle.LifecycleDemo    : LIFECYCLE >> 2026-10-10 15:58:03 - 1. Constructor called
+2026-10-10T15:58:03.815+06:00  INFO 14572 --- [spring-lab-01] [           main] k.i.springlab.lifecycle.LifecycleDemo    : LIFECYCLE >> 2026-10-10 15:58:03 - 2. @PostConstruct executed
+COUNTING notifier initialized
+2026-10-10T15:58:07.186+06:00  INFO 14572 --- [spring-lab-01] [           main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2026-10-10T15:58:07.186+06:00  INFO 14572 --- [spring-lab-01] [           main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2026-10-10T15:58:07.211+06:00  INFO 14572 --- [spring-lab-01] [           main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 4 endpoints beneath base path '/actuator'
+2026-10-10T15:58:07.243+06:00  INFO 14572 --- [spring-lab-01] [           main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 55 ms
+2026-10-10T15:58:07.379+06:00  INFO 14572 --- [spring-lab-01] [           main] k.i.s.lab6.BookWebIntegrationTests       : Started BookWebIntegrationTests in 8.493 seconds (process running for 11.492)
+2026-10-10T15:58:07.581+06:00  INFO 14572 --- [spring-lab-01] [           main] k.iitu.springlab.config.ContainerReport  : Bean definitions in total: 316
+2026-10-10T15:58:07.582+06:00  INFO 14572 --- [spring-lab-01] [           main] k.iitu.springlab.config.ContainerReport  : Notifier implementations: [console, counting, email, noop]
+2026-10-10T15:58:07.582+06:00  INFO 14572 --- [spring-lab-01] [           main] k.iitu.springlab.config.ContainerReport  : Type of the notificationService bean: kz.iitu.springlab.notify.NotificationService
+Mockito is currently self-attaching to enable the inline-mock-maker. This will no longer work in future releases of the JDK. Please add Mockito as an agent to your build as described in Mockito's documentation: https://javadoc.io/doc/org.mockito/mockito-core/latest/org.mockito/org/mockito/Mockito.html#0.3
+Java HotSpot(TM) 64-Bit Server VM warning: Sharing is only supported for boot loader classes because bootstrap classpath has been appended
+WARNING: A Java agent has been loaded dynamically (C:\Users\Arman\.m2\repository\net\bytebuddy\byte-buddy-agent\1.18.11\byte-buddy-agent-1.18.11.jar)
+WARNING: If a serviceability tool is in use, please run with -XX:+EnableDynamicAgentLoading to hide this warning
+WARNING: If a serviceability tool is not in use, please run with -Djdk.instrument.traceUsage for more information
+WARNING: Dynamic loading of agents will be disallowed by default in a future release
+[INFO] Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 13.62 s -- in kz.iitu.springlab.lab6.BookWebIntegrationTests
+[INFO] Running kz.iitu.springlab.lab6.NoDigitsValidatorTests
+[INFO] Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.256 s -- in kz.iitu.springlab.lab6.NoDigitsValidatorTests
+[INFO] Running kz.iitu.springlab.SpringLab01ApplicationTests
+2026-10-10T15:58:11.424+06:00  INFO 14572 --- [spring-lab-01] [           main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [kz.iitu.springlab.SpringLab01ApplicationTests]: SpringLab01ApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-10-10T15:58:11.498+06:00  INFO 14572 --- [spring-lab-01] [           main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration kz.iitu.springlab.SpringLab01Application for test class kz.iitu.springlab.SpringLab01ApplicationTests
+2026-10-10T15:58:11.502+06:00  INFO 14572 --- [spring-lab-01] [           main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [kz.iitu.springlab.SpringLab01ApplicationTests]: SpringLab01ApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-10-10T15:58:11.504+06:00  INFO 14572 --- [spring-lab-01] [           main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration kz.iitu.springlab.SpringLab01Application for test class kz.iitu.springlab.SpringLab01ApplicationTests
+2026-10-10T15:58:11.518+06:00  INFO 14572 --- [spring-lab-01] [           main] o.s.b.d.r.RestartApplicationListener     : Restart disabled due to context in which it is running
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v4.1.1)
+
+2026-10-10T15:58:11.606+06:00  INFO 14572 --- [spring-lab-01] [           main] k.i.s.SpringLab01ApplicationTests        : Starting SpringLab01ApplicationTests using Java 25.0.1 with PID 14572 (started by Arman in C:\Users\Arman\OneDrive\������� ����\spring-lab-git)
+2026-10-10T15:58:11.606+06:00  INFO 14572 --- [spring-lab-01] [           main] k.i.s.SpringLab01ApplicationTests        : No active profile set, falling back to 1 default profile: "default"
+2026-10-10T15:58:13.457+06:00  INFO 14572 --- [spring-lab-01] [           main] k.i.springlab.lifecycle.LifecycleDemo    : LIFECYCLE >> 2026-10-10 15:58:13 - 1. Constructor called
+2026-10-10T15:58:13.458+06:00  INFO 14572 --- [spring-lab-01] [           main] k.i.springlab.lifecycle.LifecycleDemo    : LIFECYCLE >> 2026-10-10 15:58:13 - 2. @PostConstruct executed
+COUNTING notifier initialized
+2026-10-10T15:58:14.278+06:00  INFO 14572 --- [spring-lab-01] [           main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 4 endpoints beneath base path '/actuator'
+2026-10-10T15:58:14.334+06:00  INFO 14572 --- [spring-lab-01] [           main] k.i.s.SpringLab01ApplicationTests        : Started SpringLab01ApplicationTests in 2.817 seconds (process running for 18.448)
+2026-10-10T15:58:14.336+06:00  INFO 14572 --- [spring-lab-01] [           main] k.iitu.springlab.config.ContainerReport  : Bean definitions in total: 308
+2026-10-10T15:58:14.336+06:00  INFO 14572 --- [spring-lab-01] [           main] k.iitu.springlab.config.ContainerReport  : Notifier implementations: [console, counting, email, noop]
+2026-10-10T15:58:14.337+06:00  INFO 14572 --- [spring-lab-01] [           main] k.iitu.springlab.config.ContainerReport  : Type of the notificationService bean: kz.iitu.springlab.notify.NotificationService
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.931 s -- in kz.iitu.springlab.SpringLab01ApplicationTests
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 18, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO] 
+[INFO] --- jar:3.5.1:jar (default-jar) @ spring-lab-01 ---
+[INFO] Building jar: C:\Users\Arman\OneDrive\������� ����\spring-lab-git\target\spring-lab-01-0.0.1-SNAPSHOT.jar
+[INFO] 
+[INFO] --- spring-boot:4.1.1:repackage (repackage) @ spring-lab-01 ---
+[INFO] Replacing main artifact C:\Users\Arman\OneDrive\������� ����\spring-lab-git\target\spring-lab-01-0.0.1-SNAPSHOT.jar with repackaged archive, adding nested dependencies in BOOT-INF/.
+[INFO] The original artifact has been renamed to C:\Users\Arman\OneDrive\������� ����\spring-lab-git\target\spring-lab-01-0.0.1-SNAPSHOT.jar.original
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  36.472 s
+[INFO] Finished at: 2026-10-10T15:58:17+06:00
+[INFO] ------------------------------------------------------------------------
