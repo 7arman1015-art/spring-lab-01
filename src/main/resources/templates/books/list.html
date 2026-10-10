@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" th:lang="${#locale.language}">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title th:text="#{book.catalog}">Book catalogue</title>
+    <link rel="stylesheet" th:href="@{/css/app.css}">
+</head>
+<body>
+<header th:replace="~{fragments/header :: header}"></header>
+<main class="container">
+    <p class="eyebrow" th:text="${libraryName}">Library</p>
+    <div class="page-heading">
+        <div><h1 th:text="#{book.catalog}">Book catalogue</h1>
+            <p class="intro" th:text="#{catalog.count(${#lists.size(books)})}">Books in catalogue</p></div>
+        <a class="button" th:href="@{/books/new}" th:text="#{book.new}">New book</a>
+    </div>
+    <div class="alert alert-success" role="status" th:if="${successMessage}" th:text="${successMessage}"></div>
+    <div class="card table-card">
+        <table>
+            <thead><tr>
+                <th th:text="#{book.title}">Title</th><th th:text="#{book.author}">Author</th>
+                <th th:text="#{book.year}">Year</th><th th:text="#{book.genre}">Genre</th>
+                <th th:text="#{book.status}">Status</th>
+            </tr></thead>
+            <tbody><tr th:each="book : ${books}">
+                <td><a th:href="@{/books/{id}(id=${book.id})}" th:text="${book.title}"></a></td>
+                <td th:text="${book.author}"></td><td th:text="${book.year}"></td>
+                <td th:text="#{__${'genre.' + book.genre.name()}__}"></td>
+                <td><span class="badge" th:classappend="${book.available} ? 'available' : 'unavailable'"
+                    th:text="${book.available} ? #{book.status.available} : #{book.status.unavailable}"></span></td>
+            </tr></tbody>
+        </table>
+        <p th:if="${#lists.isEmpty(books)}" th:text="#{catalog.empty}"></p>
+    </div>
+</main>
+</body>
+</html>

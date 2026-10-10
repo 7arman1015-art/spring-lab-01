@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<body>
+<header class="site-header" th:fragment="header">
+    <div class="header-inner">
+        <a class="brand" th:href="@{/books}" th:text="${libraryName}">Library</a>
+        <nav aria-label="Navigation" th:attr="aria-label=#{nav.label}">
+            <a th:href="@{/books}" th:text="#{book.catalog}">Books</a>
+            <a th:href="@{/books/new}" th:text="#{book.new}">New book</a>
+            <span class="languages">
+                <a th:href="@{''(lang='en')}" th:classappend="${#locale.language == 'en'} ? 'active'" lang="en">EN</a>
+                <a th:href="@{''(lang='ru')}" th:classappend="${#locale.language == 'ru'} ? 'active'" lang="ru">RU</a>
+            </span>
+        </nav>
+    </div>
+</header>
+</body>
+</html>

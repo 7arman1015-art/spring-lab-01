@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" th:lang="${#locale.language}">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title th:text="${title}">Book not found</title>
+    <link rel="stylesheet" th:href="@{/css/app.css}">
+</head>
+<body>
+<header th:replace="~{fragments/header :: header}"></header>
+<main class="container narrow">
+    <p class="eyebrow">404</p>
+    <h1 th:text="${title}">Book not found</h1>
+    <div class="card">
+        <p th:text="${message}"></p>
+        <p class="muted" th:text="${requestedPath}"></p>
+        <a class="button" th:href="@{/books}" th:text="#{book.back}">Back to catalogue</a>
+    </div>
+</main>
+</body>
+</html>

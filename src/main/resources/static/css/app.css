@@ -1,0 +1,50 @@
+:root { color-scheme: light; --ink: #172c37; --muted: #586b75; --primary: #12665c; --border: #d8e1e4; }
+* { box-sizing: border-box; }
+body { margin: 0; background: #f5f8f9; color: var(--ink); font: 16px/1.5 "Segoe UI", Arial, sans-serif; }
+a { color: var(--primary); text-decoration: none; }
+a:hover { text-decoration: underline; }
+.site-header { background: white; border-bottom: 1px solid var(--border); }
+.header-inner { max-width: 1060px; margin: auto; padding: 22px 30px; display: flex; align-items: center; justify-content: space-between; gap: 25px; }
+.brand { font-size: 20px; font-weight: 700; color: var(--ink); }
+nav { display: flex; align-items: center; gap: 24px; }
+.languages { display: flex; border-left: 1px solid var(--border); padding-left: 20px; gap: 6px; }
+.languages a { padding: 4px 8px; border-radius: 5px; }
+.languages .active { background: #e5f1ed; font-weight: 700; }
+.container { max-width: 1060px; margin: 36px auto; padding: 0 30px 35px; }
+.narrow { max-width: 790px; }
+.eyebrow { color: var(--primary); font-size: 12px; letter-spacing: 1.3px; text-transform: uppercase; font-weight: 700; margin: 0 0 8px; }
+h1 { font-size: 34px; line-height: 1.2; margin: 0 0 12px; letter-spacing: -.6px; }
+.intro, .muted { color: var(--muted); }
+.intro { margin: 0 0 24px; }
+.card { background: #fff; border: 1px solid var(--border); border-radius: 10px; padding: 28px; box-shadow: 0 3px 10px #172c3705; }
+.form-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 17px 22px; }
+.full-width { grid-column: 1 / -1; }
+.field { display: flex; flex-direction: column; gap: 6px; }
+label { font-weight: 600; font-size: 14px; }
+input[type="text"], select { width: 100%; min-height: 42px; padding: 9px 12px; border: 1px solid #aebec5; border-radius: 5px; font: inherit; color: var(--ink); background: #fff; }
+input:focus, select:focus { outline: 3px solid #12665c24; border-color: var(--primary); }
+.checkbox { display: flex; align-items: center; gap: 9px; font-weight: 400; }
+.checkbox input { width: 18px; height: 18px; accent-color: var(--primary); }
+.form-actions { display: flex; align-items: center; gap: 24px; margin-top: 24px; }
+button, .button { display: inline-block; padding: 11px 22px; border-radius: 5px; border: 0; background: var(--primary); color: #fff; font: 600 15px/1.4 "Segoe UI", Arial, sans-serif; cursor: pointer; }
+button:hover, .button:hover { background: #0d5149; text-decoration: none; }
+.secondary-link { font-size: 14px; }
+.alert { padding: 15px 18px; margin: 0 0 23px; border: 1px solid; border-radius: 6px; font-size: 14px; }
+.alert ul { margin: 6px 0 0; padding-left: 22px; }
+.alert-error { background: #fff4f3; border-color: #efc1bb; color: #a02e28; }
+.alert-success { background: #edf8f1; border-color: #b5d9c2; color: #206141; }
+.is-invalid { border-color: #bc4238 !important; background: #fffafa !important; }
+.error { color: #a02e28; font-size: 13px; }
+.page-heading { display: flex; align-items: flex-start; justify-content: space-between; gap: 25px; }
+.table-card { padding: 6px 22px; overflow: auto; }
+table { width: 100%; border-collapse: collapse; font-size: 14px; }
+th, td { padding: 19px 12px; border-bottom: 1px solid #e5ebee; text-align: left; }
+th { color: var(--muted); font-size: 12px; font-weight: 600; }
+tbody tr:last-child td { border: 0; }
+td:first-child a { font-weight: 600; }
+.badge { display: inline-block; padding: 3px 9px; border-radius: 20px; font-size: 12px; white-space: nowrap; }
+.available { background: #e9f5ed; color: #246643; }
+.unavailable { background: #f0f2f3; color: #5a656c; }
+.book-details { display: grid; grid-template-columns: 150px 1fr; margin: 0 0 28px; gap: 15px; }
+dt { color: var(--muted); } dd { margin: 0; }
+@media (max-width: 650px) { .header-inner { align-items: flex-start; flex-direction: column; padding: 18px 22px; } nav { gap: 14px; } .container { padding: 0 20px; margin: 25px auto; } .card { padding: 20px; } .form-grid { grid-template-columns: 1fr; } h1 { font-size: 29px; } .page-heading { flex-direction: column; margin-bottom: 20px; } }

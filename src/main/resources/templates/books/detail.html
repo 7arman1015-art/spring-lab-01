@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" th:lang="${#locale.language}">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title th:text="${book.title}">Book</title>
+    <link rel="stylesheet" th:href="@{/css/app.css}">
+</head>
+<body>
+<header th:replace="~{fragments/header :: header}"></header>
+<main class="container narrow">
+    <p class="eyebrow" th:text="#{book.details}">Book details</p>
+    <h1 th:text="${book.title}"></h1>
+    <div class="card">
+        <dl class="book-details">
+            <dt th:text="#{book.id}">ID</dt><dd th:text="${book.id}"></dd>
+            <dt th:text="#{book.author}">Author</dt><dd th:text="${book.author}"></dd>
+            <dt th:text="#{book.year}">Year</dt><dd th:text="${book.year}"></dd>
+            <dt th:text="#{book.genre}">Genre</dt><dd th:text="#{__${'genre.' + book.genre.name()}__}"></dd>
+            <dt th:text="#{book.status}">Status</dt><dd th:text="${book.available} ? #{book.status.available} : #{book.status.unavailable}"></dd>
+        </dl>
+        <a class="button" th:href="@{/books}" th:text="#{book.back}">Back to catalogue</a>
+    </div>
+</main>
+</body>
+</html>
