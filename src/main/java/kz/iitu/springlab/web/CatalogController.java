@@ -5,12 +5,14 @@ import java.util.Map;
 
 import kz.iitu.springlab.service.CatalogService;
 import org.springframework.aop.support.AopUtils;
+import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.server.ResponseStatusException;
 
 @RestController
 @RequestMapping("/api/lab4")
@@ -29,7 +31,11 @@ public class CatalogController {
 
     @GetMapping("/items")
     public List<String> items(@RequestParam(defaultValue = "5") int limit) {
-        return catalogService.findAll(limit);
+        try {
+            return catalogService.findAll(limit);
+        } catch (IllegalArgumentException ex) {
+            throw new ResponseStatusException(HttpStatus.BAD_REQUEST, ex.getMessage(), ex);
+        }
     }
 
     @DeleteMapping("/item/{id}")

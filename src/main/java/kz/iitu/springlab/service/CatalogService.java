@@ -1,8 +1,7 @@
 package kz.iitu.springlab.service;
 
 import java.util.List;
-import java.util.concurrent.ConcurrentHashMap;
-import java.util.concurrent.atomic.AtomicInteger;
+import java.util.Objects;
 import java.util.stream.IntStream;
 
 import kz.iitu.springlab.audit.Audited;
@@ -13,9 +12,13 @@ import org.springframework.stereotype.Service;
 @Service
 public class CatalogService {
 
+    // The demo generates every result in memory, so requests must stay bounded.
+    public static final int MAX_LIMIT = 1_000;
+
     private final ObjectProvider<CatalogService> self;
-    private final ConcurrentHashMap<String, AtomicInteger> retryCounts =
-            new ConcurrentHashMap<>();
+    // Keep at most one unfinished sequence per thread; a new key replaces it.
+    // AOP retries finish on that thread, and success removes the sequence.
+    private final ThreadLocal<RetryAttempt> retryAttempt = new ThreadLocal<>();
 
     public CatalogService(ObjectProvider<CatalogService> self) {
         this.self = self;
@@ -28,6 +31,9 @@ public class CatalogService {
 
     @Audited(action = "CATALOG_LIST", logArguments = true)
     public List<String> findAll(int limit) {
+        if (limit < 1 || limit > MAX_LIMIT) {
+            throw new IllegalArgumentException("Catalog limit must be between 1 and " + MAX_LIMIT);
+        }
         sleep(300);
         return IntStream.rangeClosed(1, limit)
                 .mapToObj(i -> "Item no. " + i)
@@ -59,13 +65,19 @@ public class CatalogService {
 
     @RetryOnFailure(attempts = 3)
     public String retryDemo(String key) {
-        int invocation = retryCounts
-                .computeIfAbsent(key, ignored -> new AtomicInteger())
-                .incrementAndGet();
+        Objects.requireNonNull(key, "Retry key must not be null");
+        RetryAttempt previous = retryAttempt.get();
+        int invocation = previous != null && previous.key().equals(key)
+                ? previous.number() + 1 : 1;
         if (invocation < 3) {
+            retryAttempt.set(new RetryAttempt(key, invocation));
             throw new IllegalStateException("Temporary catalog failure " + invocation);
         }
+        retryAttempt.remove();
         return "Catalog request " + key + " succeeded on attempt " + invocation;
+    }
+
+    private record RetryAttempt(String key, int number) {
     }
 
     private void sleep(long milliseconds) {
