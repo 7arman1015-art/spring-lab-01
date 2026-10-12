@@ -6,7 +6,9 @@
       "source": "src/main/java/kz/iitu/springlab/lab6/web/BookForm.java",
       "start_line": 1,
       "end_line": 24,
-      "source_sha256": "25dde49d3ff27963c215c472df77cd0ec33a6114b0db5c2ebdc7c9eff4151011"
+      "source_sha256": "25dde49d3ff27963c215c472df77cd0ec33a6114b0db5c2ebdc7c9eff4151011",
+      "capture_kind": "rendered-source",
+      "theme": "VS Code high contrast inspired"
     },
     {
       "file": "code/02-BookForm-java-2.png",
@@ -14,7 +16,9 @@
       "source": "src/main/java/kz/iitu/springlab/lab6/web/BookForm.java",
       "start_line": 25,
       "end_line": 48,
-      "source_sha256": "25dde49d3ff27963c215c472df77cd0ec33a6114b0db5c2ebdc7c9eff4151011"
+      "source_sha256": "25dde49d3ff27963c215c472df77cd0ec33a6114b0db5c2ebdc7c9eff4151011",
+      "capture_kind": "rendered-source",
+      "theme": "VS Code high contrast inspired"
     },
     {
       "file": "code/03-BookForm-java-3.png",
@@ -22,7 +26,9 @@
       "source": "src/main/java/kz/iitu/springlab/lab6/web/BookForm.java",
       "start_line": 49,
       "end_line": 70,
-      "source_sha256": "25dde49d3ff27963c215c472df77cd0ec33a6114b0db5c2ebdc7c9eff4151011"
+      "source_sha256": "25dde49d3ff27963c215c472df77cd0ec33a6114b0db5c2ebdc7c9eff4151011",
+      "capture_kind": "rendered-source",
+      "theme": "VS Code high contrast inspired"
     }
   ],
   "Genre.java": [
@@ -32,7 +38,9 @@
       "source": "src/main/java/kz/iitu/springlab/lab6/domain/Genre.java",
       "start_line": 1,
       "end_line": 5,
-      "source_sha256": "0c83529111c65fa78172dd88956d938b24f842c31133e682d276fa853f757b46"
+      "source_sha256": "0c83529111c65fa78172dd88956d938b24f842c31133e682d276fa853f757b46",
+      "capture_kind": "rendered-source",
+      "theme": "VS Code high contrast inspired"
     }
   ],
   "form.html": [
@@ -42,7 +50,9 @@
       "source": "src/main/resources/templates/books/form.html",
       "start_line": 1,
       "end_line": 19,
-      "source_sha256": "571acdb6ef21dcf9cbe8527ec87aee949e660979be868a9de3bc2570683038a9"
+      "source_sha256": "571acdb6ef21dcf9cbe8527ec87aee949e660979be868a9de3bc2570683038a9",
+      "capture_kind": "rendered-source",
+      "theme": "VS Code high contrast inspired"
     },
     {
       "file": "code/06-form-html-2.png",
@@ -50,7 +60,9 @@
       "source": "src/main/resources/templates/books/form.html",
       "start_line": 20,
       "end_line": 38,
-      "source_sha256": "571acdb6ef21dcf9cbe8527ec87aee949e660979be868a9de3bc2570683038a9"
+      "source_sha256": "571acdb6ef21dcf9cbe8527ec87aee949e660979be868a9de3bc2570683038a9",
+      "capture_kind": "rendered-source",
+      "theme": "VS Code high contrast inspired"
     },
     {
       "file": "code/07-form-html-3.png",
@@ -58,7 +70,9 @@
       "source": "src/main/resources/templates/books/form.html",
       "start_line": 39,
       "end_line": 56,
-      "source_sha256": "571acdb6ef21dcf9cbe8527ec87aee949e660979be868a9de3bc2570683038a9"
+      "source_sha256": "571acdb6ef21dcf9cbe8527ec87aee949e660979be868a9de3bc2570683038a9",
+      "capture_kind": "rendered-source",
+      "theme": "VS Code high contrast inspired"
     }
   ],
   "post": [
@@ -68,7 +82,9 @@
       "source": "src/main/java/kz/iitu/springlab/lab6/web/BookPageController.java",
       "start_line": 51,
       "end_line": 64,
-      "source_sha256": "60ce4e6dbb8c5ed8d6bf0ee71ef23974231014f9b4cea68e2e6029e6db52418b"
+      "source_sha256": "60ce4e6dbb8c5ed8d6bf0ee71ef23974231014f9b4cea68e2e6029e6db52418b",
+      "capture_kind": "rendered-source",
+      "theme": "VS Code high contrast inspired"
     }
   ],
   "NoDigits.java": [
@@ -78,7 +94,9 @@
       "source": "src/main/java/kz/iitu/springlab/lab6/validation/NoDigits.java",
       "start_line": 1,
       "end_line": 23,
-      "source_sha256": "c75a920bc724a1f976c6676c4b226af6953965fc2d2c3414f3d347701850dc41"
+      "source_sha256": "c75a920bc724a1f976c6676c4b226af6953965fc2d2c3414f3d347701850dc41",
+      "capture_kind": "rendered-source",
+      "theme": "VS Code high contrast inspired"
     }
   ],
   "NoDigitsValidator.java": [
@@ -88,7 +106,9 @@
       "source": "src/main/java/kz/iitu/springlab/lab6/validation/NoDigitsValidator.java",
       "start_line": 1,
       "end_line": 13,
-      "source_sha256": "28ef61671ad72741409553a0037865affe6401f0f46dd3667dc406435d20953c"
+      "source_sha256": "28ef61671ad72741409553a0037865affe6401f0f46dd3667dc406435d20953c",
+      "capture_kind": "rendered-source",
+      "theme": "VS Code high contrast inspired"
     }
   ],
   "LocaleConfiguration.java": [
@@ -98,7 +118,9 @@
       "source": "src/main/java/kz/iitu/springlab/lab6/config/LocaleConfiguration.java",
       "start_line": 1,
       "end_line": 15,
-      "source_sha256": "89d3dfc4e4378589c2b7a6fb49746596c449e59d04fbeeed03599db05deb99fa"
+      "source_sha256": "89d3dfc4e4378589c2b7a6fb49746596c449e59d04fbeeed03599db05deb99fa",
+      "capture_kind": "rendered-source",
+      "theme": "VS Code high contrast inspired"
     },
     {
       "file": "code/12-LocaleConfiguration-java-2.png",
@@ -106,7 +128,9 @@
       "source": "src/main/java/kz/iitu/springlab/lab6/config/LocaleConfiguration.java",
       "start_line": 16,
       "end_line": 30,
-      "source_sha256": "89d3dfc4e4378589c2b7a6fb49746596c449e59d04fbeeed03599db05deb99fa"
+      "source_sha256": "89d3dfc4e4378589c2b7a6fb49746596c449e59d04fbeeed03599db05deb99fa",
+      "capture_kind": "rendered-source",
+      "theme": "VS Code high contrast inspired"
     }
   ],
   "PageExceptionHandler.java": [
@@ -116,7 +140,9 @@
       "source": "src/main/java/kz/iitu/springlab/lab6/web/PageExceptionHandler.java",
       "start_line": 1,
       "end_line": 21,
-      "source_sha256": "32c56cf72fdacda9f6d272a440ebfbb7e092991fa467bbfdb9a43566fdc34eb3"
+      "source_sha256": "32c56cf72fdacda9f6d272a440ebfbb7e092991fa467bbfdb9a43566fdc34eb3",
+      "capture_kind": "rendered-source",
+      "theme": "VS Code high contrast inspired"
     },
     {
       "file": "code/14-PageExceptionHandler-java-2.png",
@@ -124,7 +150,9 @@
       "source": "src/main/java/kz/iitu/springlab/lab6/web/PageExceptionHandler.java",
       "start_line": 22,
       "end_line": 41,
-      "source_sha256": "32c56cf72fdacda9f6d272a440ebfbb7e092991fa467bbfdb9a43566fdc34eb3"
+      "source_sha256": "32c56cf72fdacda9f6d272a440ebfbb7e092991fa467bbfdb9a43566fdc34eb3",
+      "capture_kind": "rendered-source",
+      "theme": "VS Code high contrast inspired"
     }
   ],
   "ApiExceptionHandler.java": [
@@ -134,7 +162,9 @@
       "source": "src/main/java/kz/iitu/springlab/lab6/web/ApiExceptionHandler.java",
       "start_line": 1,
       "end_line": 17,
-      "source_sha256": "4b7cc579f016029b9ec94a403f5ddaecef56f715a771b28358397e7f9e2210e9"
+      "source_sha256": "4b7cc579f016029b9ec94a403f5ddaecef56f715a771b28358397e7f9e2210e9",
+      "capture_kind": "rendered-source",
+      "theme": "VS Code high contrast inspired"
     },
     {
       "file": "code/16-ApiExceptionHandler-java-2.png",
@@ -142,7 +172,9 @@
       "source": "src/main/java/kz/iitu/springlab/lab6/web/ApiExceptionHandler.java",
       "start_line": 18,
       "end_line": 34,
-      "source_sha256": "4b7cc579f016029b9ec94a403f5ddaecef56f715a771b28358397e7f9e2210e9"
+      "source_sha256": "4b7cc579f016029b9ec94a403f5ddaecef56f715a771b28358397e7f9e2210e9",
+      "capture_kind": "rendered-source",
+      "theme": "VS Code high contrast inspired"
     }
   ],
   "messages.properties": [
@@ -152,7 +184,9 @@
       "source": "src/main/resources/messages.properties",
       "start_line": 1,
       "end_line": 20,
-      "source_sha256": "8021d5804374d96cb57a0122cf15f29ed9c87dd09faca5750bb3ed3da55551e9"
+      "source_sha256": "8021d5804374d96cb57a0122cf15f29ed9c87dd09faca5750bb3ed3da55551e9",
+      "capture_kind": "rendered-source",
+      "theme": "VS Code high contrast inspired"
     },
     {
       "file": "code/18-messages-properties-2.png",
@@ -160,7 +194,9 @@
       "source": "src/main/resources/messages.properties",
       "start_line": 21,
       "end_line": 40,
-      "source_sha256": "8021d5804374d96cb57a0122cf15f29ed9c87dd09faca5750bb3ed3da55551e9"
+      "source_sha256": "8021d5804374d96cb57a0122cf15f29ed9c87dd09faca5750bb3ed3da55551e9",
+      "capture_kind": "rendered-source",
+      "theme": "VS Code high contrast inspired"
     }
   ],
   "messages_ru.properties": [
@@ -170,7 +206,9 @@
       "source": "src/main/resources/messages_ru.properties",
       "start_line": 1,
       "end_line": 20,
-      "source_sha256": "180081539a0e9110c0d0761907fe20504ef796cbf34d401a394a30be8c451582"
+      "source_sha256": "180081539a0e9110c0d0761907fe20504ef796cbf34d401a394a30be8c451582",
+      "capture_kind": "rendered-source",
+      "theme": "VS Code high contrast inspired"
     },
     {
       "file": "code/20-messages-ru-properties-2.png",
@@ -178,7 +216,9 @@
       "source": "src/main/resources/messages_ru.properties",
       "start_line": 21,
       "end_line": 40,
-      "source_sha256": "180081539a0e9110c0d0761907fe20504ef796cbf34d401a394a30be8c451582"
+      "source_sha256": "180081539a0e9110c0d0761907fe20504ef796cbf34d401a394a30be8c451582",
+      "capture_kind": "rendered-source",
+      "theme": "VS Code high contrast inspired"
     }
   ],
   "Book.java": [
@@ -188,7 +228,9 @@
       "source": "src/main/java/kz/iitu/springlab/lab6/domain/Book.java",
       "start_line": 1,
       "end_line": 5,
-      "source_sha256": "1af3a22f37ab13f26fd7c772fb9db50ab1ec6f8c728f59f9b435d2e5c0fc8152"
+      "source_sha256": "1af3a22f37ab13f26fd7c772fb9db50ab1ec6f8c728f59f9b435d2e5c0fc8152",
+      "capture_kind": "rendered-source",
+      "theme": "VS Code high contrast inspired"
     }
   ],
   "get_new": [
@@ -198,7 +240,9 @@
       "source": "src/main/java/kz/iitu/springlab/lab6/web/BookPageController.java",
       "start_line": 44,
       "end_line": 49,
-      "source_sha256": "60ce4e6dbb8c5ed8d6bf0ee71ef23974231014f9b4cea68e2e6029e6db52418b"
+      "source_sha256": "60ce4e6dbb8c5ed8d6bf0ee71ef23974231014f9b4cea68e2e6029e6db52418b",
+      "capture_kind": "rendered-source",
+      "theme": "VS Code high contrast inspired"
     }
   ]
 }

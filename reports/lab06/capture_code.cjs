@@ -1,4 +1,5 @@
-// Capture a browser source view of the actual committed source files.
+// Render actual source files in a dark theme inspired by the user's VS Code.
+// These are source-code illustrations, not screenshots of the VS Code app.
 // The report uses these PNGs instead of editable code listings.
 const fs = require('node:fs/promises');
 const path = require('node:path');
@@ -106,15 +107,13 @@ function methodRange(lines, annotation) {
         const end = Math.min(start + perPart, range.end);
         const code = lines.slice(start, end).map((line, index) => `<div class="line"><span class="ln">${start + index + 1}</span><code>${codeLine(line, fileName) || ' '}</code></div>`).join('');
         await page.setContent(`<!doctype html><html lang="en"><head><meta charset="UTF-8"><title>${escapeHtml(fileName)}</title><style>
-          *{box-sizing:border-box}body{margin:0;padding:20px;background:#edf0f4;color:#17202a}
-          #source{width:1300px;background:#fff;border:1px solid #ccd3dc;border-radius:5px;overflow:hidden}
-          header{padding:16px 22px 12px;background:#f7f9fc;border-bottom:1px solid #d9e0e8;font-family:Arial,sans-serif}
-          h1{font-size:23px;margin:0 0 8px;font-weight:600}header p{font-size:17px;margin:0;line-height:1.4;overflow-wrap:anywhere;color:#475569}
+          *{box-sizing:border-box}body{margin:0;padding:20px;background:#000;color:#d4d4d4}
+          #source{width:1300px;background:#000;border:1px solid #a86a22;border-radius:3px;overflow:hidden}
           main{padding:14px 16px 16px 8px}.line{display:grid;grid-template-columns:58px 1fr;font:21.5px/1.32 Consolas,'Courier New',monospace;min-height:28.4px}
-          .ln{text-align:right;padding-right:16px;color:#6d7989;user-select:none;border-right:1px solid #e1e6ec}
+          .ln{text-align:right;padding-right:16px;color:#d8cb83;user-select:none;border-right:1px solid #444}
           code{padding-left:16px;white-space:pre-wrap;overflow-wrap:anywhere;tab-size:4;font:inherit}
-          .keyword{color:#7c2693}.string{color:#125d2b}.annotation{color:#6c4b0a}.comment{color:#586c5c}.number{color:#075e91}.property{color:#175ca0}
-        </style></head><body><article id="source"><header><h1>${escapeHtml(fileName)} · lines ${start + 1}–${end}</h1><p>${escapeHtml(rel)}</p></header><main>${code}</main></article></body></html>`);
+          .keyword{color:#569cd6}.string{color:#7fd7c4}.annotation{color:#dcdcaa}.comment{color:#82a768}.number{color:#b5cea8}.property{color:#9cdcfe}
+        </style></head><body><article id="source" aria-label="${escapeHtml(fileName)} source lines ${start + 1} to ${end}"><main>${code}</main></article></body></html>`);
         await page.evaluate(() => document.fonts.ready);
         const sourceText = await page.locator('code').allTextContents();
         assert.deepEqual(sourceText.map(line => line === ' ' ? '' : line), lines.slice(start, end));
@@ -127,6 +126,7 @@ function methodRange(lines, annotation) {
           file: 'code/' + name,
           caption: title + (parts > 1 ? ` part ${part} of ${parts}` : ''),
           source: rel, start_line: start + 1, end_line: end, source_sha256: hash,
+          capture_kind: 'rendered-source', theme: 'VS Code high contrast inspired',
         });
       }
     }
