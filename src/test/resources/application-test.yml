@@ -1,0 +1,12 @@
+spring:
+  datasource:
+    url: ${TEST_DB_URL:jdbc:postgresql://localhost:5432/springlab_test}
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+    properties:
+      hibernate.session_factory.statement_inspector: kz.iitu.springlab.lab8.SqlCapture
+
+logging:
+  level:
+    org.hibernate.SQL: OFF

@@ -4,6 +4,20 @@ server:
 spring:
   application:
     name: spring-lab-01
+  profiles:
+    default: dev
+  datasource:
+    url: ${DB_URL:jdbc:postgresql://localhost:5432/springlab}
+    username: ${DB_USERNAME:springlab}
+    password: ${DB_PASSWORD:springlab}
+  jpa:
+    open-in-view: false
+    hibernate:
+      ddl-auto: validate
+    show-sql: true
+    properties:
+      hibernate.format_sql: true
+      hibernate.query.fail_on_pagination_over_collection_fetch: true
   messages:
     basename: messages
     encoding: UTF-8

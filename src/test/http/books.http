@@ -1,0 +1,54 @@
+@host = http://localhost:8080
+
+### Default page: 5 books sorted by title
+GET {{host}}/api/books
+
+### Second page, three books, newest first
+GET {{host}}/api/books?page=1&size=3&sort=year,desc
+
+### Filter the same collection
+GET {{host}}/api/books?genre=TECHNOLOGY&page=0&size=3&sort=year,desc
+
+### Invalid sort field: 400 ProblemDetail
+GET {{host}}/api/books?sort=nosuchfield
+
+### Missing resource: 404 ProblemDetail
+GET {{host}}/api/books/999
+
+### Create: 201 and Location (use that Location for the requests below)
+POST {{host}}/api/books
+Content-Type: application/json
+
+{
+  "title": "Lab Eight Demo",
+  "author": "Demo Author",
+  "year": 2020,
+  "genre": "SCIENCE",
+  "available": true
+}
+
+### Repeat the preceding POST: 409 ProblemDetail
+
+### Replace 9 with the identifier from Location
+PUT {{host}}/api/books/9
+Content-Type: application/json
+
+{
+  "title": "Lab Eight Demo",
+  "author": "Demo Author",
+  "year": 2021,
+  "genre": "SCIENCE",
+  "available": false
+}
+
+### Delete: 204; repeat: 404
+DELETE {{host}}/api/books/9
+
+### Validation failure: 400 and errors.title
+POST {{host}}/api/books
+Content-Type: application/json
+
+{"title":"","author":"Demo Author","year":2020,"genre":"SCIENCE"}
+
+### OpenAPI specification
+GET {{host}}/v3/api-docs

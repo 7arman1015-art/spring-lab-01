@@ -14,7 +14,7 @@
     <div class="card">
         <dl class="book-details">
             <dt th:text="#{book.id}">ID</dt><dd th:text="${book.id}"></dd>
-            <dt th:text="#{book.author}">Author</dt><dd th:text="${book.author}"></dd>
+            <dt th:text="#{book.author}">Author</dt><dd th:text="${book.author()}"></dd>
             <dt th:text="#{book.year}">Year</dt><dd th:text="${book.year}"></dd>
             <dt th:text="#{book.genre}">Genre</dt><dd th:text="#{__${'genre.' + book.genre.name()}__}"></dd>
             <dt th:text="#{book.status}">Status</dt><dd th:text="${book.available} ? #{book.status.available} : #{book.status.unavailable}"></dd>

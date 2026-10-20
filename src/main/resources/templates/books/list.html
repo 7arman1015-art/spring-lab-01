@@ -25,7 +25,7 @@
             </tr></thead>
             <tbody><tr th:each="book : ${books}">
                 <td><a th:href="@{/books/{id}(id=${book.id})}" th:text="${book.title}"></a></td>
-                <td th:text="${book.author}"></td><td th:text="${book.year}"></td>
+                <td th:text="${book.author()}"></td><td th:text="${book.year}"></td>
                 <td th:text="#{__${'genre.' + book.genre.name()}__}"></td>
                 <td><span class="badge" th:classappend="${book.available} ? 'available' : 'unavailable'"
                     th:text="${book.available} ? #{book.status.available} : #{book.status.unavailable}"></span></td>
