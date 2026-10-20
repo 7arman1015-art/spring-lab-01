@@ -31,7 +31,3 @@ build/
 
 ### VS Code ###
 .vscode/
-
-# Internal document layout checks; screenshots in evidence remain deliverables.
-reports/lab06/qa/
-reports/lab06/__pycache__/
